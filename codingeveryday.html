@@ -3,10 +3,17 @@
 <head>
   <title>생활코딩_공부노트</title>
   <meta charset="utf-8">
-  <style> 
+  <style>
     a {
       color:blue;
     }
+    .class {
+      color:orange;
+    }
+    #id {
+      color:purple;
+    }
+
     h1 {
       font-size:45px;
       font-aline:center;
@@ -22,8 +29,8 @@
 <h1><a href="codingeveryday.html" style="color:green;text-decoration:none"> 생활코딩_공부노트 coding_everyday </a></h1>
 
 <ul>
-  <li>2022-01-22 / Web1     / 2022-01-29</li>
-  <li>2022-01-30 / Web2_css </li>
+  <li class="class">2022-01-22 / Web1     / 2022-01-29</li>
+  <li id="id">2022-01-30 / Web2_css </li>
 </ul>
 
   <p>
@@ -45,7 +52,7 @@
     <li> 물질이 존재하는 세상에서는 일어나지 않는 일 -> 하나를 바꾸면 모든 것이 변한다.</li>
     <li> 코딩을 어떻게 할까?에 집중된 수업이지만 -> 코딩을 잘하는 것은 중복을 제거하고, 타인에 의한 유지보수의 용이성, 가독성, 의사소통, 오류가능성의 제거를 도모하는 것이다.</li>
   </ol>
-  
+
   <img src="css-1.jpg" width="30%">
 
   <table border="">
@@ -60,23 +67,23 @@
     <li> html과 css는 다른 언어이므로, 웹브라우저에게 그 둘의 구분을 해줘야 한다.-> 1) head에서 style <b>태그</b>를 쓴다. (선택자 selector "a" 와 그 구체적인 효과 "color:green"를 선언 declaration 한다.) 2) body에서 style <b>속성</b>을 쓴다: "인라인태그"를 작성한다.</li>
     <li> style 속성은 html이지만, 그 내용은 css로 해석된다. -> 전체 "a"링크 중에서 특정 링크만 단독적으로 색깔을 달리 하는 맞춤형 디자인을 가능하게 한다.</li>
   </ol>
-    
+
   <table border="">
       <tr>
         <td>css</td>
         <td> style="color:red;text-decoration:none / underline" </td>
       </tr>
   </table>
-    
+
  <h3>4</h3>
-  
-  <img src="css-2.jpg" width="30%">
-  
+
+  <img src="css-2.jpg" width="20%">
+
   <ol>
     <li> selector와 property를 알고 원하는 value를 넣어서 declaration하는 것이다. (선택자 selector "a" 와 그 구체적인 효과 "color:green"를 선언 declaration 한다.) </li>
     <li> 무엇을 모르는지 모르는 상태에서 -> 무엇을 모르는지 아는 상태가 되었고 -> 모르는 것을 검색해서 알 수 있게 되었다. </li>
-  </ol>   
- 
+  </ol>
+
  <h3>5, 6</h3>
    <table border="">
       <tr>
@@ -88,16 +95,16 @@
         <td>center</td>
       </tr>
   </table>
- 
+
 <h3>7</h3>
-  
+
   <ol>
     <li> 선택자는 a << class << id 의 순으로 우선순위를 가진다. -> id는 웹페이지 내 고유한 유일무이한 값을 1번만 가진다. (예: id="123456", id="1") 반면 a 는 웹페이지에 존재하는 모든 링크를 지칭하며 포괄적 정보를 의미한다. class는 중간 위상을 가진다. </li>
     <li> 같은 레벨의 선택자라면 가장 나중에 쓴 것 (=밑에 쓴것)이 우선순위를 가진다 -> class="saw active good" 이고, head에서 saw=green; active=yellow; good=pink라면 결국 그 텍스트는 pink가 된다. 만약 head에서 good=pink, saw=green, active=yellow라 했다면 그 텍스트는 yellow가 된다.  </li>
-    <li> <img src="css-3.jpg"> </li>
     <li> class는 . 으로 쓰며, id는 #으로 쓴다.</li>
-    <li> <img src="css-4.jpg"> </li>
-  </ol>   
-    
+    <li> <img src="css-3.jpg" width="70%"> </li>
+    <li> <img src="css-4.jpg" width="70%"> </li>
+  </ol>
+
 </body>
 </html>
