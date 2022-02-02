@@ -57,7 +57,7 @@
 
 <h3>3</h3>
   <ol>
-    <li> html과 css는 다른 언어이므로, 웹브라우저에게 그 둘의 구분을 해줘야 한다.-> 1) head에서 style <b>태그</b>를 쓴다. (선택자 selector "a" 와 그 구체적인 효과 "color:green"를 선언 declaration 한다. 2) body에서 style <b>속성</b>을 쓴다.</li>
+    <li> html과 css는 다른 언어이므로, 웹브라우저에게 그 둘의 구분을 해줘야 한다.-> 1) head에서 style <b>태그</b>를 쓴다. (선택자 selector "a" 와 그 구체적인 효과 "color:green"를 선언 declaration 한다.) 2) body에서 style <b>속성</b>을 쓴다: "인라인태그"를 작성한다.</li>
     <li> style 속성은 html이지만, 그 내용은 css로 해석된다. -> 전체 "a"링크 중에서 특정 링크만 단독적으로 색깔을 달리 하는 맞춤형 디자인을 가능하게 한다.</li>
   </ol>
     
@@ -73,22 +73,31 @@
   <img src="css-2.jpg" width="30%">
   
   <ol>
-    <li> selector와 property를 알고 원하는 value를 넣어서 declaration하는 것이다. </li>
+    <li> selector와 property를 알고 원하는 value를 넣어서 declaration하는 것이다. (선택자 selector "a" 와 그 구체적인 효과 "color:green"를 선언 declaration 한다.) </li>
     <li> 무엇을 모르는지 모르는 상태에서 -> 무엇을 모르는지 아는 상태가 되었고 -> 모르는 것을 검색해서 알 수 있게 되었다. </li>
   </ol>   
  
- <h3>5</h3>
+ <h3>5, 6</h3>
    <table border="">
       <tr>
         <td>font-size</td>
         <td>23px</td>
       </tr>
       <tr>
-        <td>font-aline/td>
+        <td>font-aline </td>
         <td>center</td>
       </tr>
   </table>
-    
+ 
+<h3>7</h3>
+  
+  <ol>
+    <li> 선택자는 a << class << id 의 순으로 우선순위를 가진다. -> id는 웹페이지 내 고유한 유일무이한 값을 1번만 가진다. (예: id="123456", id="1") 반면 a 는 웹페이지에 존재하는 모든 링크를 지칭하며 포괄적 정보를 의미한다. class는 중간 위상을 가진다. </li>
+    <li> 같은 레벨의 선택자라면 가장 나중에 쓴 것 (=밑에 쓴것)이 우선순위를 가진다 -> class="saw active good" 이고, head에서 saw=green; active=yellow; good=pink라면 결국 그 텍스트는 pink가 된다. 만약 head에서 good=pink, saw=green, active=yellow라 했다면 그 텍스트는 yellow가 된다.  </li>
+    <li> <img src="css-3.jpg"> </li>
+    <li> class는 . 으로 쓰며, id는 #으로 쓴다.</li>
+    <li> <img src="css-4.jpg"> </li>
+  </ol>   
     
 </body>
 </html>
